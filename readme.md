@@ -1,5 +1,7 @@
 # Proyecto de consumo de APIS e ingesta a Redshift
 
+![Proyeto Market Data](Market_data/img/market_data_proyecto.gif)
+
 Objetivos
 
 * Crear un pipeline que extraiga datos de APIS públicas de forma constante.
@@ -49,4 +51,4 @@ Para acceder al portal dirigirse a http://localhost:8080/ en su navegador prefer
 4. Alertas: Envía alertas por correo electrónico basadas en condiciones específicas.
 5. Finaliza el proceso
 
-![Tareas del DAG](Market_data/tareas_dags.png)
+![Tareas del DAG](Market_data/img/tareas_dags.png)
