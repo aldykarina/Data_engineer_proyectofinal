@@ -80,7 +80,7 @@ dag_path = os.getcwd()     #path original.. home en Docker
 
 
 task1 = BashOperator(
-    task_id='primera_tarea',
+    task_id='Inicio_Tareas',
     bash_command='echo Iniciando...'
 )
 
@@ -97,7 +97,7 @@ task3 = PythonOperator(
 )
 
 task4 = EmailOperator(
-    task_id='send_email',
+    task_id='Alertas',
     to= Variable.get("to_address"),
     subject="{{ task_instance.xcom_pull(task_ids='generate_email_content_and_subject', key='email_subject') }}",
     html_content="{{ task_instance.xcom_pull(task_ids='generate_email_content_and_subject', key='estimates') }}",
@@ -105,7 +105,7 @@ task4 = EmailOperator(
 )
 
 task5 = BashOperator(
-    task_id= 'tercera_tarea',
+    task_id= 'Proeso_finalizado',
     bash_command='echo Proceso completado...'
 )
 
