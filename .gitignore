@@ -1,0 +1,6 @@
+Market_data/raw_data
+Market_data/processed_data
+Market_data/plugins
+Market_data/logs
+Market_data/dags/__pycache__
+Market_data/dags/modules/__pycache__
